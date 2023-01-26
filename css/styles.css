@@ -1,6 +1,7 @@
 .body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
+  color: #434455;
   
 }
 :root {
@@ -8,7 +9,6 @@
    --bcg-grey-color:  #f4f4fd;
 --bcg-blue-color:#2e2f42;
 --hover-color: #4d5ae5;
- --text-color: #434455;
 --accent-color: #404bbf;
 --subtle-bcg: #e7e9fc;
   
@@ -27,7 +27,7 @@
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  letter-spacing: 0.03px;
+  letter-spacing: 0.03em;
 }
 .logo {
   color: var(--bcg-blue-color);
@@ -36,7 +36,7 @@
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  letter-spacing: 0.03px;
+  letter-spacing: 0.03em;
 }
 
 
@@ -47,22 +47,21 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02px;
+  letter-spacing: 0.02em;
 }
-.nav-items:hover, :focus {
-  color: var(--hover-color);
+.nav-items:hover, .nav-items:focus {
+  color: var(--accent-color);
 }
 .nav-items.active {
   color: var(--accent-color);
 }
 .contact-item {
-  color:var(--text-color);
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02px;
+  letter-spacing: 0.02em;
 }
-.contact-item:hover, :focus{
+.contact-item:hover,.contact-item :focus{
   color: var(--accent-color);
 } 
 
@@ -83,7 +82,7 @@
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
-  letter-spacing: 0.02px;
+  letter-spacing: 0.02em;
 }
 .hero-button {
   background-color:var(--hover-color);
@@ -95,8 +94,10 @@
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
 }
-.hero-button:hover, :focus {
+.hero-button:hover,.hero-button :focus {
   background-color: var(--accent-color);
 }
 
@@ -104,8 +105,14 @@
 
 .section-title {
   color: var(--bcg-blue-color);
-}
 
+font-weight: 700;
+Font-size: 36px;
+line-height: 1.11;
+text-align: center;
+letter-spacing: 0.02em;
+}
+ 
 .strategy-name,
 .item-name {
   color: var(--bcg-blue-color);
@@ -113,15 +120,14 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02px;
+  letter-spacing: 0.02em;
 }
 .text,
 .item-text {
-  color: var(--text-color);
 
 font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02px;
+  letter-spacing: 0.02em;
 }
 
 /* what are we doing */
@@ -132,7 +138,7 @@ font-size: 16px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  letter-spacing: 0.02px;
+  letter-spacing: 0.02em;
 }
 
 /* our team */
@@ -140,7 +146,7 @@ font-size: 16px;
   background-color: var(--bcg-grey-color);
 }
 .item-name{
-letter-spacing: 0,02px;
+letter-spacing: 0,02em;
 }
 
 
@@ -160,6 +166,7 @@ letter-spacing: 0,02px;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
+  letter-spacing: 0.04em;
 }
 
 .footer-text {
@@ -167,7 +174,7 @@ letter-spacing: 0,02px;
 
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02px;
+  letter-spacing: 0.02em;
 }
 
 /* Portfolio */
@@ -183,8 +190,10 @@ letter-spacing: 0,02px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
 }
-.button:hover, :focus {
+.button:hover, .button:hover :focus {
   background-color: var(--accent-color);
   color: var(--bcg-white-color);
 }
@@ -196,14 +205,12 @@ letter-spacing: 0,02px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02px;
+  letter-spacing: 0.02em;
 }
 .thumb-text {
-  color: var(--text-color);
-
-  font-size: 16px;
+ font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02px;
+  letter-spacing: 0.02em;
 }
 .thumb-link{
   text-decoration: none;
