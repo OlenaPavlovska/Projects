@@ -1,7 +1,7 @@
 .body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
-  color: #434455;
+  color: var(--text-color);
   
 }
 :root {
@@ -11,6 +11,7 @@
 --hover-color: #4d5ae5;
 --accent-color: #404bbf;
 --subtle-bcg: #e7e9fc;
+--text-color:#434455;
   
  
 }
@@ -41,7 +42,7 @@
 
 
 /* navigation */
-.site-nav {
+.nav-items {
   color: var(--bcg-blue-color);
 
   font-weight: 500;
@@ -56,7 +57,8 @@
   color: var(--accent-color);
 }
 .contact-item {
-  font-style: normal;
+color: var(--text-color);
+font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -113,8 +115,7 @@ text-align: center;
 letter-spacing: 0.02em;
 }
  
-.strategy-name,
-.item-name {
+.stategy-title, .item-name{
   color: var(--bcg-blue-color);
 
   font-weight: 500;
@@ -145,9 +146,7 @@ font-size: 16px;
 .team {
   background-color: var(--bcg-grey-color);
 }
-.item-name{
-letter-spacing: 0,02em;
-}
+
 
 
 /* footer */
@@ -207,7 +206,9 @@ letter-spacing: 0,02em;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
-.thumb-text {
+.thumb-link {
+color: var(--text-color);
+
  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
