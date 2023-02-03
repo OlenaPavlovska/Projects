@@ -58,7 +58,7 @@ button{
 .conteiner{
   display: flex;
   align-items: center;
-width: 1128px;
+width: 1158px;
 margin-left: auto;
 margin-right: auto;
 padding-left: 15px;
@@ -232,7 +232,7 @@ margin-bottom: 120px;
 .strategy-items{
   display: flex;
   width: 264px;
-gap: 24px;
+
   
     
 }
@@ -265,7 +265,7 @@ margin-top: 0px;
 }
 
 .strategy-list{
- 
+ flex-basis: calc((100%-3*24px)/4);
 
     
 
@@ -408,25 +408,24 @@ padding-bottom: 16px;
 
 
 /* filter */
-.filter{
-  justify-content: center;
+
   
   
-  margin-top: 96px;
-  margin-bottom: 120px;
-  margin-left: auto;
-  margin-right: auto;
-   
-}
+  
+ 
+
 .filter-items{
   display: flex;
+   max-height: 56px;
+   margin-top: 96px;
+   margin-bottom: 72px;
   
-  max-height: 56px;
+
 
   
 }
 .buttons{
-  justify-content: center;
+ 
 }
 .button {
   display:block;
@@ -460,6 +459,9 @@ border: 1px solid var(--subtle-bcg);
 
 
 /*section */
+.portfolio{
+  padding-bottom: 120px;
+}
 .thumb-title {
   margin-top: 0px;
   margin-bottom: 8px;
@@ -475,11 +477,11 @@ border: 1px solid var(--subtle-bcg);
   border: 1px solid var(--subtle-bcg);
   border-top: none;
 }
-.thumbnail{
+
   
  
   
-}
+
 
 .thumb-link {
   text-decoration: none;
@@ -514,6 +516,7 @@ color: var(--text-color);
  .card-set{
   
   display: flex;
+  gap:48px 24px;
   flex-wrap: wrap;
   gap: var(--card-set-gap);
   padding: 0px;
@@ -524,7 +527,7 @@ color: var(--text-color);
 
  }
  .card-set >.card-set-item{
-flex-basis: calc((100%-2*24px)/3);
+flex-basis: calc((100% - 2 * 24px) /3);
 
 
 }
