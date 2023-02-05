@@ -335,7 +335,7 @@ Bottom-left-radius: 4px;
 background-color:var(--bcg-white-color)
 }
 .item-name{
-
+text-align: center;
 color: var(--bcg-blue-color);
   font-weight: 500;
   font-size: 20px;
@@ -344,6 +344,7 @@ color: var(--bcg-blue-color);
 }
  
 .item-text{
+text-align: center;
  
  color: var(--text-color);
   font-size: 16px;
@@ -351,9 +352,11 @@ color: var(--bcg-blue-color);
   letter-spacing: 0.02px; 
 }
 .about-team{
-  width: 232px;
+ width: 232px;
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0px;
  
 }
@@ -450,13 +453,16 @@ border: 1px solid var(--subtle-bcg);
 .thumb-title {
  
   margin-bottom: 8px;
-
+padding-left: 16px;
   color: var(--bcg-blue-color);
 
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02px;
+}
+.thumb-text{
+  padding-left: 16px;
 }
 
 .thumb-link {
@@ -484,10 +490,11 @@ text-decoration: none;
  .card-set >.card-set-item{
 flex-basis: calc((100% - 2 * var(--card-set-gap)) /3);
 }
-.decription{
+.about-card{
+  width: 360px;
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-left: 16px;
+
   
   border-bottom: 1px solid var(--subtle-bcg);
 border-left:1px solid var(--subtle-bcg) ;
