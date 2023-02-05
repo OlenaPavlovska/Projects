@@ -1,7 +1,5 @@
 .body {
-  width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+ 
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
   color: var(--text-color);
@@ -176,7 +174,8 @@ font-style: normal;
 .hero{
  padding-top: 188px;
  padding-bottom: 188px;
- margin-bottom: 120px;
+
+ 
 }
 
 .hero,
@@ -203,7 +202,7 @@ font-size: 56px;
 margin-right: auto;
 margin-left:auto ;
 padding: 16px 32px;
-border-radius: 4px;
+
 
 
   background-color:var(--hover-color);
@@ -239,7 +238,9 @@ font-family: inherit;
   flex-basis: calc((100% - 3 * 24px)/4);
 }
 .strategy{
-  margin-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  
 }
 
 .stategy-title, .item-name{
@@ -289,6 +290,9 @@ font-size: 36px;
   text-align: center;
   letter-spacing: 0.02px; 
 }
+.examples{
+  padding-bottom: 120px;
+}
 
 
 /* our team */
@@ -301,14 +305,16 @@ font-size: 36px;
   list-style: none;
 }
 .set-team-item{
-  flex-basis: ((100% - 3 * 24px) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .team {
  background-color: var(--bcg-grey-color);
+padding-top: 120px;
+padding-bottom: 120px;
 }
 
 .section-title-team{
-  padding-top: 120px;
+ 
 margin-bottom: 72px;
 
   font-size: 36px;
@@ -319,7 +325,10 @@ margin-bottom: 72px;
 
 
 .team-item{
-  margin-bottom: 120px;
+ 
+  border-bottom: 1px solid var(--subtle-bcg);
+  Bottom-right-radius: 4px;
+Bottom-left-radius: 4px;
 
 
 
@@ -327,7 +336,7 @@ background-color:var(--bcg-white-color)
 }
 .item-name{
 
-
+color: var(--bcg-blue-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -336,10 +345,17 @@ background-color:var(--bcg-white-color)
  
 .item-text{
  
- 
+ color: var(--text-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02px; 
+}
+.about-team{
+  width: 232px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: 0px;
+ 
 }
 
 
@@ -358,7 +374,8 @@ background-color:var(--bcg-white-color)
   line-height: 1.33;
 }
 .footer-logo {
- margin-bottom: 16px;
+ 
+ 
 
   color:var(--bcg-grey-color);
 
@@ -371,6 +388,7 @@ background-color:var(--bcg-white-color)
 
 .footer-text {
   width: 264px;
+  margin-top:16px ;
  color: var(--subtle-bcg);
 
   font-size: 16px;
@@ -387,19 +405,17 @@ background-color:var(--bcg-white-color)
 
 /* filter */
 .filter{
-margin-top: 96px;
-margin-bottom: 72px;
-}
-.filter-items{
-  display: flex;
-  gap: var(--card-set-gap);
-  flex-wrap: wrap;
-  padding: 0px;
-margin: 0px;
+padding-top: 69px;
+padding-bottom: 120px;
 }
 
-.buttons{
-  flex-basis: calc((100% - 4 * 24px) / 5);
+.filter-items{
+display: flex;
+  gap: var(--card-set-gap);
+width: 586px;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 72px;
 }
 
 .button {
@@ -427,16 +443,12 @@ border: 1px solid var(--subtle-bcg);
 .button:hover, .button:hover :focus {
   background-color: var(--accent-color);
   color: var(--bcg-white-color);
+
+
+
 }
-
-
-/*section */
-.portfolio{
-  padding-bottom: 120px;
-}
-
 .thumb-title {
-  margin-top: 0px;
+ 
   margin-bottom: 8px;
 
   color: var(--bcg-blue-color);
@@ -447,27 +459,16 @@ border: 1px solid var(--subtle-bcg);
   letter-spacing: 0.02px;
 }
 
-.card{
-  border: 1px solid var(--subtle-bcg);
-  border-top: none;
-}
-
 .thumb-link {
-  text-decoration: none;
+  
  margin-right: 0px;
-  margin-bottom:120px ;
+
 
 color: var(--text-color);
-
+text-decoration: none;
  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02px;
-}
-
-.thumb{
-  margin-top: 0px;
-  margin-bottom: 32px;
-  margin-right:0px;
 }
 
 /* card set */
@@ -482,6 +483,16 @@ color: var(--text-color);
 
  .card-set >.card-set-item{
 flex-basis: calc((100% - 2 * var(--card-set-gap)) /3);
+}
+.decription{
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  
+  border-bottom: 1px solid var(--subtle-bcg);
+border-left:1px solid var(--subtle-bcg) ;
+border-right: 1px solid var(--subtle-bcg);
+
 }
 
   
