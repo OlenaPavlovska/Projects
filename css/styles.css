@@ -72,8 +72,9 @@ padding-right: 15px;
 }
 
 .page-header{
-  padding-top: 24px;
-padding-bottom: 24px;
+  
+
+  
 border-bottom: 1px solid var(--subtle-bcg);
 }
 
@@ -108,6 +109,7 @@ color: var(--bcg-blue-color);
 .nav{
   display: flex;
   align-items: center;  
+
 }
 
 .site-nav{
@@ -119,9 +121,14 @@ color: var(--bcg-blue-color);
 .nav-list{
    display: flex;
   align-items: center;
+  
  }
 
 .nav-items {
+position: relative;
+  padding-top: 24px;
+    padding-bottom: 24px;
+
 color: var(--bcg-blue-color);
 
   font-weight: 500;
@@ -141,7 +148,18 @@ color: var(--bcg-blue-color);
 .nav-items, .contact-item, .logo, .footer-logo{
   text-decoration: none;
 }
+.nav-items.current::after {
+content: "";
+position: absolute;
+bottom:0;
 
+display: block;
+width: 100%;
+height: 4px;
+border-radius: 4px;
+
+background-color: var(--accent-color);
+}
 
 /* address */
 .contact{
@@ -534,8 +552,8 @@ gap: 16px;
   height: 40px;
 
 }
-.media-icons:hover,
-.media-icons:focus{
+.media-icons:hover
+{
 background-color: #31D0AA;
   border-radius: 50%;
 }
@@ -549,6 +567,10 @@ align-items: center;
  border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 fill: var(--bcg-grey-color);
+}
+.media-link:focus{
+  background-color: #31D0AA;
+    border-radius: 50%;
 }
  
 .media-icon{
@@ -668,8 +690,46 @@ border-right: 1px solid var(--subtle-bcg);
 }
 
   
+.backdrop{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(46, 47, 66, 0.4);
+}
 
+.modal{
+  width: 408px;
+  min-height:576px;
+position: absolute;
+top: 50%;
+right: 50%;
 
+border: 4px;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 2px 1px rgba(0, 0, 0, 0.2);;
+background-color: #FCFCFC;;
+}
+
+.modal-btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+ 
+  padding: 0px;
+border:1px solid rgba(0, 0, 0, 0.1);
+
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));;
+}
+.modal-icon{
+  fill: #000000;
+}
 
 
 
