@@ -139,7 +139,7 @@ color: var(--bcg-blue-color);
   line-height: 1.5;
   letter-spacing: 0.02px; 
 
-  transition:color var(--trns-fast),var(--trns);
+  transition:color var(--trns-fast) var(--trns);
 }
 
 .nav-items:hover, .nav-items:focus {
@@ -157,7 +157,7 @@ color: var(--bcg-blue-color);
 content: "";
 position: absolute;
 bottom:0;
-
+left: 0;
 display: block;
 width: 100%;
 height: 4px;
@@ -186,7 +186,7 @@ font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02px;
 
-  transition: color var(--trns-fast), var(--trns);
+  transition: color var(--trns-fast) var(--trns);
 }
 
 .contact-item:hover,.contact-item :focus{
@@ -249,10 +249,10 @@ font-family: inherit;
   letter-spacing: 0.04px;
   cursor: pointer;
 
-  transition:background-color var(--trns-fast), var(--trns),  ;
+  transition:background-color var(--trns-fast) var(--trns);
 }
 
-.hero-button:hover,.hero-button :focus {
+.hero-button:hover,.hero-button:focus {
   background-color: var(--accent-color);
 }
 
@@ -430,7 +430,7 @@ list-style: none;
 background-color:var(--hover-color);
 fill: var(--bcg-grey-color); 
 
-transition:background-color var(--trns-fast), var(--trns) ;
+transition: background-color var(--trns-fast) var(--trns) ;
 }
 
 .social-link:hover,
@@ -481,7 +481,7 @@ border: 1px solid #8E8F99;
 
 fill: #8E8F99;
 
-transition:fill var(--trns-fast), var(--trns);
+transition:fill var(--trns-fast) var(--trns);
 }
 
 .customer-link:hover,
@@ -566,7 +566,7 @@ gap: 16px;
   width: 40px;
   height: 40px;
    
-  transition: background-color var(--trns-fast), var(--trns);
+  transition: background-color var(--trns-fast) var(--trns);
 
 }
 .media-icons:hover
@@ -585,7 +585,7 @@ align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
 fill: var(--bcg-grey-color);
 
-transition: background-color var(--trns-fast), var(--trns);
+transition: background-color var(--trns-fast) var(--trns);
 
 }
 .media-link:focus{
@@ -641,8 +641,8 @@ background-color: var(--subtle-bcg);
   letter-spacing: 0.04px;
   cursor: pointer;
 
-  transition: background-color var(--trns-fast), var(--trns), color var(--trns-fast), var(--trns),
-  box-shadow var(--trns-fast),var(--trns);
+  transition: background-color var(--trns-fast) var(--trns), color var(--trns-fast) var(--trns),
+  box-shadow var(--trns-fast) var(--trns);
 }
 
 .button:hover, .button:hover :focus {
@@ -676,7 +676,7 @@ text-decoration: none;
   line-height: 1.5;
   letter-spacing: 0.02px;
 
-  transition: box-shadow var(--trns-fast), var(--trns);
+  transition: box-shadow var(--trns-fast) var(--trns);
 
 
 
@@ -694,7 +694,7 @@ overflow: hidden;
   height: 100%;
   background-color:var(--hover-color);
   transform: translateY(100%);
-  transition:transform var(--trns-fast) var(--trns)
+  transition:transform var(--trns-fast) var(--trns);
 
 }
 
@@ -753,7 +753,7 @@ border-right: 1px solid var(--subtle-bcg);
 }
 
 .card{
-  transition: box-shadow var(--trns-fast), var(--trns);
+  transition: box-shadow var(--trns-fast) var(--trns);
 }
 
 .card:hover,
@@ -771,7 +771,7 @@ border-right: 1px solid var(--subtle-bcg);
   opacity: 1;
   background-color:rgba(46, 47, 66, 0.4);
 
-transition: opacity var(--trns-fast), var(--trns), visibility var(--trns-fast), var(--trns);
+transition: opacity var(--trns-fast) var(--trns), visibility var(--trns-fast) var(--trns);
 }
 .backdrop.is-hidden{
   pointer-events:none ;
@@ -813,7 +813,7 @@ border:1px solid rgba(0, 0, 0, 0.1);
 
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));;
 
-transition: background-color var(--trns-fast), var(--trns);
+transition: background-color var(--trns-fast) var(--trns);
 }
 
 .modal-icon{
@@ -821,7 +821,7 @@ transition: background-color var(--trns-fast), var(--trns);
   height: 8px;
   fill: #000000;
 
-  transition: fill var(--trns-fast), var(--trns);
+  transition: fill var(--trns-fast) var(--trns);
 }
 
 .modal-btn:hover{
