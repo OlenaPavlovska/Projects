@@ -502,14 +502,23 @@
           <div class="subscribe">
             <p class="subscribe-text">Subsribe</p>
 
-            <label class="footer-label" for="user_email"></label>
-            <input
-              class="footer-form"
-              type="text"
-              id="user_email"
-              placeholder="E-mail"
-            />
-            <button type="submit">Subscribe</button>
+            <label class="footer-label" for="user_email">
+              <div class="footer-form-group">
+                <input
+                  class="footer-form"
+                  type="text"
+                  name="email"
+                  id="user_email"
+                  placeholder="E-mail"
+                />
+                <button class="subscribe-btn" type="submit">
+                  Subscribe
+                  <svg class="subscribe-icon" width="24" height="24">
+                    <use href="./images/icons/icons.svg#footer-frame"></use>
+                  </svg>
+                </button>
+              </div>
+            </label>
           </div>
         </div>
       </div>
@@ -529,7 +538,12 @@
         <form class="modal-form" name="modal_form">
           <label class="modal-form-label" for="user-name">Name</label>
           <div class="modal-form-group">
-            <input class="modal-form-field" type="text" id="user-name" />
+            <input
+              class="modal-form-field"
+              type="text"
+              name="text"
+              id="user-name"
+            />
             <svg class="modal-form-icon" width="18" height="18">
               <use href="./images/icons/icons.svg#icon-person"></use>
             </svg>
@@ -537,7 +551,12 @@
 
           <label class="modal-form-label" for="user-telephone">Phone</label>
           <div class="modal-form-group">
-            <input class="modal-form-field" type="tel" id="user-telephone" />
+            <input
+              class="modal-form-field"
+              type="tel"
+              name="tel"
+              id="user-telephone"
+            />
             <svg class="modal-form-icon" width="18" height="24">
               <use href="./images/icons/icons.svg#icon-phone"></use>
             </svg>
@@ -545,7 +564,12 @@
 
           <label class="modal-form-label" for="user-email">Email</label>
           <div class="modal-form-group">
-            <input class="modal-form-field" type="email" id="user-email" />
+            <input
+              class="modal-form-field"
+              type="email"
+              name="email"
+              id="user-email"
+            />
             <svg class="modal-form-icon" width="18" height="24">
               <use href="./images/icons/icons.svg#icon-email"></use>
             </svg>
@@ -560,28 +584,29 @@
             placeholder="Text input"
           ></textarea>
 
-          <label class="modal-form-agreement"></label>
-          <span class="modal-form-description"
-            >I accept the terms and conditions of the
-            <a class="modal-form-link" href="">Privacy Policy</a>
-          </span>
+          <label class="modal-form-agreement">
+            <span class="modal-form-description"
+              >I accept the terms and conditions of the
+              <a class="modal-form-link" href="">Privacy Policy</a>
+            </span>
 
-          <input
-            class="modal-form-checkbox"
-            type="checkbox"
-            name="user_agreement"
-          />
+            <input
+              class="modal-form-checkbox visual-hidden"
+              type="checkbox"
+              name="user_agreement"
+            />
 
-          <svg class="icon-box" width="16" height="16">
-            <use
-              class="icon-box-frame"
-              href="./images/icons/icons.svg#icon-box"
-            ></use>
-            <use
-              class="icon-box-check"
-              href="./images/icons/icons.svg#icon-box-check"
-            ></use>
-          </svg>
+            <svg class="icon-box" width="16" height="16">
+              <use
+                class="icon-box-frame"
+                href="./images/icons/icons.svg#icon-box"
+              ></use>
+              <use
+                class="icon-box-check"
+                href="./images/icons/icons.svg#icon-box-check"
+              ></use>
+            </svg>
+          </label>
         </form>
         <button class="modal-form-btn" type="submit">Send</button>
       </div>
