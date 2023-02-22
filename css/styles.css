@@ -65,6 +65,18 @@ button{
   padding: 0px;
   list-style: none;
 }
+.visual-hidden{
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0 );
+clip-path: inset(50%);
+margin: -1px;
+}
 
 .conteiner{
  width: 1158px;
@@ -500,11 +512,12 @@ padding-top: 100px;
 .footer-items{
   display: flex;
   flex-wrap: wrap;
-  gap: 120px; 
+  gap: ; 
 }
 
 .footer-block{
   width: 264px;
+  margin-right: 120px;
 }
 
 .footer-link {
@@ -537,7 +550,8 @@ padding-top: 100px;
 }
 
 .social-media{
-width: 208px;  
+width: 208px; 
+margin-right: 80px; 
 }
 
 .media-text {
@@ -597,6 +611,23 @@ transition: background-color var(--trns-fast) var(--trns);
   width: 24px;
   height: 24px;
  }
+
+ .footer-label{}
+
+  .subscribe{
+    
+width: 453px;
+  }
+  .subscribe-text{
+    margin-bottom: 16px;
+  
+    color: var(--bcg-white-color);
+  
+    font-weight: 500px;
+    Font-size: 16px;
+    Line-height: 1.5;
+    Letter-spacing: 0.02px;
+    }
 
  
 
@@ -788,9 +819,12 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%,-50%);
+padding-top: 72px;
+padding-left: 24px;
+padding-bottom: 24px;
+padding-right: 24px;
 
-
-border: 4px;
+border-radius: 4px;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 2px 1px rgba(0, 0, 0, 0.2);;
@@ -798,7 +832,7 @@ background-color: #FCFCFC;;
 }
 
 .modal-btn{
-  position: absolute;
+   position: absolute; 
   top: 10px;
   right: 10px;
   display: flex;
@@ -807,7 +841,7 @@ background-color: #FCFCFC;;
   width: 24px;
   height: 24px;
   border-radius: 50%;
- 
+
   padding: 0px;
 border:1px solid rgba(0, 0, 0, 0.1);
 
@@ -835,3 +869,158 @@ transition: background-color var(--trns-fast) var(--trns);
 
 
 
+.modal-text{
+  margin-bottom: 16px;
+
+
+  text-align: center;
+ 
+    font-weight: 500;
+    font-size: 16px;
+    line-height:1.5;
+    letter-spacing: 0.02px;
+color:var(--bcg-blue-color)
+}
+
+.modal-form{
+margin-bottom: 24px;
+}
+
+.modal-form-label{
+  display: block;
+ margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.33;
+    text-decoration: none;
+   
+  
+    letter-spacing: 0.04px;
+  
+  
+  
+    color: #8E8F99;
+}
+
+.modal-form-group{
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.modal-form-field{
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+border:  1px solid rgba(33, 33, 33, 0.2);
+outline: 1px solid transparent;
+padding-left: 38px;
+padding-right: 38px;
+
+transition: outline-color var(--trns-fast)  var(--trns);
+}
+.modal-form-field:focus {
+  outline-color: var(--hover-color);
+}
+.modal-form-icon{
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  fill: var(--bcg-blue-color);
+  transition: fill var(--trns-fast) var(--trns);
+}
+.modal-form-field:focus + .modal-form-icon{
+  fill: var(--hover-color);
+}
+
+.modal-form-comment{
+  display: block;
+  width: 100%;
+  height: 120px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+  resize: none;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: 1px solid transparent;
+  transition: outline-color var(--trns-fast) var(--trns);
+margin-bottom: 16px; 
+}
+.modal-form-comment:focus{
+  outline-color: var(--hover-color);
+}
+.modal-form-comment::placeholder{
+  font-size: 12px;
+    line-height: 1.33;
+   letter-spacing: 0.04px;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-agreement{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+ 
+
+}
+
+.modal-form-description{
+  font-size: 12px;
+  color: #757575;
+  user-select: none;
+  
+}
+
+.modal-form-link{
+  color: var(--hover-color);
+}
+
+.icon-box-frame{
+  fill: transparent;
+  stroke: var(--bcg-blue-color);
+
+ 
+}
+.modal-form-checkbox:checked + .icon-box>.icon-box-frame {
+fill: var(--accent-color);
+opacity: 0;
+}
+
+.icon-box-check{
+opacity: 0;
+ 
+ 
+}
+.modal-form-checkbox:checked + .icon-box > 
+.icon-box-check{
+  opacity: 1;
+
+
+}
+
+.modal-form-btn{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 16px 64px;
+  border: none;
+border-radius: 4px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+background-color: var(--hover-color);
+color: var(--bcg-white-color);
+
+font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04px;
+  cursor: pointer;
+transition: background-color var(--trns-fast) var(--trns);
+
+}
