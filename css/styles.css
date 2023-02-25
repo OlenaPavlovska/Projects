@@ -608,14 +608,16 @@ transition: background-color var(--trns-fast) var(--trns);
   width: 24px;
   height: 24px;
  }
+.footer-form-subscribe{
+display: flex;
 
- .footer-label{
-  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+
   
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
- }
 
   .subscribe{
    
@@ -890,6 +892,7 @@ background-color: #FCFCFC;;
 }
 
 .modal-btn{
+  fill: #2e2f42;
    position: absolute; 
   top: 24px;
   right: 24px;
@@ -905,13 +908,13 @@ border:1px solid rgba(0, 0, 0, 0.1);
 
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));;
 
-transition: background-color var(--trns-fast) var(--trns);
+transition: background-color var(--trns-fast) var(--trns), fill var(--trns-fast) var(--trns);
 }
 
 .modal-icon{
   width: 8px;
   height: 8px;
-  fill: #000000;
+  fill:currentColor;
 
   transition: fill var(--trns-fast) var(--trns);
 }
@@ -1033,6 +1036,7 @@ margin-bottom: 16px;
 
 .modal-form-link{
   color: var(--hover-color);
+  text-decoration: none;
 }
 
 .icon-box-frame{
