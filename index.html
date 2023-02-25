@@ -500,10 +500,10 @@
           </div>
 
           <div class="subscribe">
-            <p class="subscribe-text">Subsribe</p>
+            <p class="subscribe-text">Subscribe</p>
 
-            <label class="footer-label" for="user_email">
-              <div class="footer-form-group">
+            <form class="footer-form-subscribe" name="footer_form">
+              <label class="footer-label" for="user_email">
                 <input
                   class="footer-form"
                   type="text"
@@ -517,8 +517,8 @@
                     <use href="./images/icons/icons.svg#footer-frame"></use>
                   </svg>
                 </button>
-              </div>
-            </label>
+              </label>
+            </form>
           </div>
         </div>
       </div>
@@ -585,11 +585,6 @@
           ></textarea>
 
           <label class="modal-form-agreement">
-            <span class="modal-form-description"
-              >I accept the terms and conditions of the
-              <a class="modal-form-link" href="">Privacy Policy</a>
-            </span>
-
             <input
               class="modal-form-checkbox visual-hidden"
               type="checkbox"
@@ -606,9 +601,13 @@
                 href="./images/icons/icons.svg#icon-box-check"
               ></use>
             </svg>
+            <span class="modal-form-description"
+              >I accept the terms and conditions of the
+              <a class="modal-form-link" href="">Privacy Policy</a>
+            </span>
           </label>
+          <button class="modal-form-btn" type="submit">Send</button>
         </form>
-        <button class="modal-form-btn" type="submit">Send</button>
       </div>
     </div>
 

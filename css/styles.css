@@ -610,7 +610,11 @@ transition: background-color var(--trns-fast) var(--trns);
  }
 
  .footer-label{
+  display: flex;
   
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
  }
 
   .subscribe{
@@ -628,13 +632,7 @@ width: 453px;
     Letter-spacing: 0.02px;
     }
 
-    .footer-form-group{
-display: flex;
-
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-    }
+    
     .footer-form{
         display: block;
           width: 264px;
@@ -708,6 +706,7 @@ width: 586px;
 margin-right: auto;
 margin-left: auto;
 margin-bottom: 72px;
+margin-top: 96px;
 }
 
 
@@ -892,8 +891,8 @@ background-color: #FCFCFC;;
 
 .modal-btn{
    position: absolute; 
-  top: 10px;
-  right: 10px;
+  top: 24px;
+  right: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -942,7 +941,7 @@ color:var(--bcg-blue-color)
 }
 
 .modal-form{
-margin-bottom: 24px;
+
 }
 
 .modal-form-label{
@@ -951,7 +950,6 @@ margin-bottom: 24px;
     font-size: 12px;
     line-height: 1.33;
     text-decoration: none;
-   
   
     letter-spacing: 0.04px;
   
@@ -1022,7 +1020,7 @@ margin-bottom: 16px;
   display: flex;
 
   gap: 8px;
- 
+  margin-bottom: 24px;
 
 }
 
@@ -1040,7 +1038,7 @@ margin-bottom: 16px;
 .icon-box-frame{
   fill: transparent;
   stroke: var(--bcg-blue-color);
-
+transition: fill var(--trns-fast) var(--trns);
  
 }
 .modal-form-checkbox:checked + .icon-box>.icon-box-frame {
@@ -1050,13 +1048,12 @@ opacity: 0;
 
 .icon-box-check{
 opacity: 0;
- 
+transition: opacity var(--trns-fast) var(--trns);
  
 }
 .modal-form-checkbox:checked + .icon-box > 
 .icon-box-check{
   opacity: 1;
-
 
 }
 
@@ -1079,6 +1076,5 @@ font-family: inherit;
   text-align: center;
   letter-spacing: 0.04px;
   cursor: pointer;
-transition: background-color var(--trns-fast) var(--trns);
 
 }
