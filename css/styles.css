@@ -15,13 +15,7 @@
 --light: #f4f4fd;
 
   --bcg-white-color: #ffffff;
- 
-
-
-
-
-
---gradient:rgba(46, 47, 66, 0.7);
+ --gradient:rgba(46, 47, 66, 0.7);
 --card-set-gap:24px;
 --card-set-gap-sec:48px;
 --set-gap-nav:40px;
@@ -86,6 +80,8 @@ button{
 clip-path: inset(50%);
 margin: -1px;
 }
+
+
 /* phone */
 .conteiner{
 min-width: 320px;
@@ -114,8 +110,6 @@ outline-offset: -2px;
     max-width:1158px;
   }
 }
-
-
 
 .page-header{
   border-bottom: 1px solid var(--accent);
@@ -1383,7 +1377,7 @@ background-color: #FCFCFC;;
 }
 
 .modal-btn{
-  fill: #2e2f42;
+  fill: var(--dark);
    position: absolute; 
   top: 24px;
   right: 24px;
@@ -1568,11 +1562,12 @@ font-family: inherit;
 
 
 .menu{
-width: 426px;
-min-height: 796px;
+width: 100vw;
+min-height: 100vw;
 position: fixed;
-  top:0;
+top: 0;
   left: 0;
+  transform: translateX(100%);
 
 padding-top: 80px;
   padding-left: 40px;
@@ -1580,8 +1575,18 @@ padding-top: 80px;
   padding-right: 40px;
   background: var(--bcg-white-color);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-transform: translateX(100%)
+
   }
+
+     
+     
+ @media screen and (min-width:768px){
+  .menu
+  {
+    display: none;
+  }
+ }
+
 .menu.is-open {
   transform: translateX(0);
 }
@@ -1595,24 +1600,24 @@ fill: var(--dark);
   justify-content: center;
   width: 24px;
   height: 24px;
-  margin-bottom: 16px;
+
   border-radius: 50%;
-          padding: 0px;
-            border: 1px solid rgba(0, 0, 0, 0.1);
+ padding: 0px;
+ border: 1px solid rgba(0, 0, 0, 0.1);
           
-            box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
-            ;
+ box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
           
-            transition: background-color var(--trns-fast) var(--trns),
-              fill var(--trns-fast) var(--trns);
+ transition: background-color var(--trns-fast) var(--trns),
+fill var(--trns-fast) var(--trns);
 }
+
+
    
   .menu-btn-close{
     width: 8px;
       height: 8px;
-      fill:currentColor;
-    
-      transition: fill var(--trns-fast) var(--trns);
+    fill: currentColor;
+     transition: fill var(--trns-fast) var(--trns);
   }      
     
 

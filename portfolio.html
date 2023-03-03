@@ -407,20 +407,19 @@
         </div>
       </div>
     </footer>
-
     <!-- menu window -->
-    <div class="menu" js-menu-container>
-      <button class="menu-close" type="button" js-close-menu>
+    <div class="menu js-menu-container">
+      <button class="menu-close js-close-menu" type="button">
         <svg class="menu-btn-close" width="24" height="24">
-          <use href="./images/icons/svg#close"></use>
+          <use href="./images/icons/icons.svg#close"></use>
         </svg>
       </button>
       <ul class="page-menu-list">
-        <li class="page-items">
+        <li class="page-items active">
           <a class="page-item" href="./index.html">Studio</a>
         </li>
 
-        <li class="page-items active">
+        <li class="page-items">
           <a class="page-item" href="./portfolio.html">Portfolio</a>
         </li>
 
@@ -473,7 +472,7 @@
         </li>
       </ul>
     </div>
-
-    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js" type="module"></script>
+    <script src="./js/modal.js" type="module"></script>
   </body>
 </html>
