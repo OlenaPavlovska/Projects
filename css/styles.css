@@ -558,7 +558,7 @@ font-weight: 700;
 }
 
 .text{
-  /* width: 396px; */
+
 
   margin-top: 0px;
 
@@ -893,7 +893,13 @@ justify-content: center;
   }
  }
 
+ @media screen and (min-width:1200px){
+  .footer-block{
+    margin-right: 120px;
+    margin-bottom: 0;
 
+  }
+ }
 .footer-link{
  
   color:var(--primary-brand);
@@ -1362,8 +1368,8 @@ transition: opacity var(--trns-fast) var(--trns), visibility var(--trns-fast) va
 }
 
 .modal{
-  width: 408px;
-  min-height:576px;
+min-width: 320px;
+  min-height:586px;
 position: absolute;
 top: 50%;
 left: 50%;
@@ -1377,8 +1383,12 @@ border-radius: 4px;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 2px 1px rgba(0, 0, 0, 0.2);;
-background-color: #FCFCFC;;
+background-color: #FCFCFC;
 }
+
+
+
+ 
 
 .modal-btn{
   fill: var(--dark);
@@ -1664,16 +1674,12 @@ fill var(--trns-fast) var(--trns);
     .menu-contact-tel{
      
         font-weight: 600;
-        font-size: 24px;
+        font-size: 36px;
         line-height: 1.11;
       color: var(--primary-brand);
       
     }
- @media screen and (min-width:428px){
-  .menu-contact-tel{
-    font-size: 36px;
-  }
- }
+
    .menu-contact-item{
   
       font-weight: 500;
