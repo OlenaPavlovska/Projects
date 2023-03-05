@@ -93,8 +93,7 @@ margin-right: auto;
 padding-right: 15px;  
 
 
-outline: 2px solid red;
-outline-offset: -2px;
+
 }
 
 /* tablet */
@@ -329,7 +328,7 @@ background-size: cover;
 
 @media screen and (min-width:428px) and (max-width:767px){
   .hero{
-   
+
     background-image:
         linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/hero/Dark-bg_herotablet@1x.jpg);
@@ -349,14 +348,15 @@ background-size: cover;
 
 @media screen and (min-width:768px){
   .hero{
-    
-   
+  background-size: cover;
+    margin-right: auto;
+      margin-left: auto;
     padding-top: 112px;
     padding-bottom: 108px;
     background-image:
     
         linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/hero/people-office\ 1_herodesctop@1x.jpg);
+        url(../images/hero/Dark-bg_herotablet@1x.jpg);
   }
 
     @media (min-device-pixel-ratio: 2),
@@ -367,7 +367,7 @@ background-size: cover;
         background-image:
         
             linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/hero/people-office\ 1_herodesctop@2x.jpg);
+            url(../images/hero/Dark-bg_herotablet@2x.jpg);
   
       }
     }
@@ -382,7 +382,7 @@ background-size: cover;
     background-image:
     
         linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/hero/people-office\ 1_herodesctop@1x.jpg);
+        url(../images/hero/people_herodesctop@1x.jpg);
   }
 
      @media (min-device-pixel-ratio: 2),
@@ -393,7 +393,7 @@ background-size: cover;
          background-image:
   
            linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-           url(../images/hero/people-office\ 1_herodesctop@2x.jpg);
+           url(../images/hero/people_herodesctop@2x.jpg);
   
        }
      }
@@ -853,21 +853,23 @@ padding-top: 96px;
 }
 @media screen and (min-width:768px){
 .footer-items{
-
+padding-left: 108px;
   gap: 0;
  flex-direction: row;
 flex-wrap: wrap;
 align-items: baseline;
 justify-content: flex-start;
+
+
 }
 
  @media screen and (min-width:1200px){
   .footer-items{
-   
+   padding-left: 0;
     flex-direction: row;
     gap: 0;
    flex-wrap: nowrap;
-     
+justify-content: center;
   }
 }  
 
@@ -884,8 +886,9 @@ justify-content: center;
  @media screen and (min-width:768px){
   .footer-block{
     display: block;
-    margin-right: 120px;
+    margin-right: 24px;
     margin-bottom: 72px;
+  
   }
  }
 
@@ -1563,7 +1566,7 @@ font-family: inherit;
 
 .menu{
 width: 100vw;
-min-height: 100vw;
+
 position: fixed;
 top: 0;
   left: 0;
@@ -1670,7 +1673,7 @@ fill var(--trns-fast) var(--trns);
     display: flex;
       flex-wrap: wrap;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       gap: 56px;
       padding: 0px;
       margin: 0px;
